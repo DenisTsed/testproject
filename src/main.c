@@ -3,7 +3,8 @@
 int main(int argc, char **argv)
 {
     /* Comment */
-	/* Comment2 */
+    /* Comment 2 */
+    /* Comment 3 */
     printf("Hello, world!\n");
     return 0;
 }
