@@ -14,7 +14,7 @@ on:
 
 jobs:
   my_testing1:
-    runs-on: ubuntu-latest123123
+    runs-on: ubuntu-latest
     env:
       VAR1: "This is job level variable 1"
       VAR2: "This is job level variable 2"
@@ -44,7 +44,7 @@ jobs:
         run: ls -la
 
   my_testing2:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest123123
     needs: [my_testing1]
 
     steps:
