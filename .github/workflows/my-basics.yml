@@ -44,7 +44,7 @@ jobs:
         run: ls -la
 
   my_testing2:
-    runs-on: ubuntu-latest
+    runs-on34535: ubuntu-latest
     needs: [my_testing1]
 
     steps:
