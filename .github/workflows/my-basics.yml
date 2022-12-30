@@ -9,9 +9,17 @@ on:
       - main
 
 jobs:
-  my_testing:
+  my_testing1:
     runs-on: ubuntu-latest
 
     steps:
       - name: Print Hello World
-        run: echo "Hello, world"
+        run: echo "Hello, world from testing1"
+
+  my_testing2:
+    runs-on: ubuntu-latest
+    needs: [my_testing1]
+
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, world from testing2"
