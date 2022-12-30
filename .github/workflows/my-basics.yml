@@ -1,0 +1,17 @@
+# --------------------
+# GitHub Action part-1
+# --------------------
+
+name: My-GitHubActions-Basics
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, world"
